@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Оформление наследства под ключ | ЯПомогаю.рф</title>
+<meta name="description" content="Оформление наследства под ключ по всей России. Принятие по закону и по завещанию, восстановление сроков, оспаривание, наследственные споры. Юристы ЯПомогаю.рф — глава 61–63 ГК РФ.">
+<meta name="keywords" content="оформление наследства под ключ, вступление в наследство, восстановление срока принятия наследства, оспаривание завещания, наследственные споры, юрист по наследству, раздел наследственного имущества, обязательная доля">
+<meta property="og:title" content="Оформление наследства под ключ | ЯПомогаю.рф">
+<meta property="og:description" content="Юридическое сопровождение наследственных дел по всей России. Нотариус, суд, Росреестр — под ключ.">
+<meta property="og:type" content="website">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: '#001F3F',
+          'navy-deep': '#000F1F',
+          'navy-soft': '#0A2D4F',
+          gold: '#D4AF37',
+          'gold-light': '#E5C158',
+          'gold-pale': '#F4E9C8',
+          cream: '#FAF7F2',
+          'cream-deep': '#F2EDE2',
+          ink: '#0A1929',
+          muted: '#4A5568',
+          'muted-light': '#718096',
+          line: '#E8E2D5'
+        },
+        fontFamily: {
+          heading: ['Inter', 'system-ui', 'sans-serif'],
+          body: ['Roboto', 'system-ui', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Roboto', sans-serif; background: #FAF7F2; color: #0A1929; -webkit-font-smoothing: antialiased; }
+  h1,h2,h3,h4,h5,h6 { font-family: 'Inter', sans-serif; letter-spacing: -0.02em; }
+
+  ::selection { background: #D4AF37; color: #001F3F; }
+
+  /* Reveal on scroll */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .9s cubic-bezier(.22,1,.36,1), transform .9s cubic-bezier(.22,1,.36,1); }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* FAQ */
+  .faq-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .45s cubic-bezier(.22,1,.36,1); }
+  .faq-panel > div { overflow: hidden; }
+  .faq-item.open .faq-panel { grid-template-rows: 1fr; }
+  .faq-item.open .faq-plus { transform: rotate(45deg); }
+  .faq-plus { transition: transform .35s cubic-bezier(.22,1,.36,1); }
+
+  /* Legal blocks (collapsible) */
+  .legal-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .6s cubic-bezier(.22,1,.36,1); }
+  .legal-panel > div { overflow: hidden; }
+  .legal-item.open .legal-panel { grid-template-rows: 1fr; }
+  .legal-item.open .legal-plus { transform: rotate(45deg); }
+  .legal-plus { transition: transform .35s cubic-bezier(.22,1,.36,1); }
+
+  /* Inputs */
+  .field-input,
+  .field-select {
+    width: 100%;
+    background: #FAF7F2;
+    border: 1px solid #E8E2D5;
+    color: #0A1929;
+    padding: .75rem 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    transition: border-color .2s, background .2s;
+    appearance: none;
+  }
+  .field-input:focus, .field-select:focus { outline: none; border-color: #001F3F; background: #fff; }
+  .field-select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23001F3F' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+  }
+
+  .num-tnum { font-feature-settings: "tnum"; font-variant-numeric: tabular-nums; }
+
+  /* Gold underline accent */
+  .gold-rule { display: inline-block; width: 2.5rem; height: 2px; background: #D4AF37; }
+
+  /* Subtle hover lift for cards */
+  .lift { transition: transform .35s cubic-bezier(.22,1,.36,1), border-color .35s; }
+  .lift:hover { transform: translateY(-3px); border-color: #D4AF37; }
+
+  /* Hide arrows on number inputs */
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+  input[type=number] { -moz-appearance: textfield; }
+
+  /* Prevent horizontal overflow */
+  body, html { overflow-x: hidden; }
+</style>
+</head>
+<body class="font-body antialiased">
+
+<!-- ================= HEADER ================= -->
+<header class="sticky top-0 z-50 bg-cream border-b border-line">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-[68px] flex items-center justify-between gap-4">
+    <a href="#top" class="flex items-center gap-2 sm:gap-3 group">
+      <span class="w-9 h-9 sm:w-10 sm:h-10 bg-navy text-gold flex items-center justify-center font-heading font-bold text-lg leading-none">Я</span>
+      <span class="font-heading font-bold text-navy text-base sm:text-lg leading-none">
+        ЯПомогаю<span class="text-gold">.рф</span>
+      </span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm text-muted">
+      <a href="#services" class="hover:text-navy transition">Услуги</a>
+      <a href="#process" class="hover:text-navy transition">Как работаем</a>
+      <a href="#cases" class="hover:text-navy transition">Кейсы</a>
+      <a href="#faq" class="hover:text-navy transition">Вопросы</a>
+    </nav>
+    <div class="flex items-center gap-2 sm:gap-3">
+      <a href="#" class="hidden sm:inline-flex items-center text-sm text-navy border border-line hover:border-navy px-3 sm:px-4 py-2 transition">Все услуги</a>
+      <a href="#contact" class="inline-flex items-center bg-navy text-cream text-xs sm:text-sm px-3 sm:px-5 py-2 sm:py-2.5 hover:bg-navy-deep transition">
+        <span class="hidden sm:inline">Консультация</span>
+        <span class="sm:hidden">Связаться</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="top" class="relative bg-navy text-cream overflow-hidden">
+  <!-- gold horizon line -->
+  <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent"></div>
+  <div class="absolute bottom-0 right-0 w-2/3 sm:w-1/2 h-px bg-gradient-to-l from-gold to-transparent"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-24 lg:pt-32 pb-20 sm:pb-28 lg:pb-32 relative">
+
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 xl:gap-16 items-end">
+      <div class="lg:col-span-8">
+        <div class="flex items-center gap-3 text-gold text-xs sm:text-sm tracking-[0.2em] uppercase mb-6 sm:mb-8 font-medium">
+          <span class="gold-rule"></span>
+          Наследственное право · Россия
+        </div>
+        <h1 class="font-heading font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] 2xl:text-[6rem] leading-[1.02] tracking-tight">
+          Оформление<br>
+          наследства<br>
+          <span class="text-gold">под ключ.</span>
+        </h1>
+        <p class="mt-7 sm:mt-9 text-base sm:text-lg lg:text-xl text-cream/80 max-w-2xl leading-relaxed">
+          Принимаем наследство по закону и по завещанию, восстанавливаем пропущенные сроки, оспариваем завещания и разрешаем наследственные споры. Работаем с нотариусом, судом и Росреестром по всей территории Российской Федерации.
+        </p>
+      </div>
+
+      <div class="lg:col-span-4 flex flex-col gap-3 sm:gap-4">
+        <a href="#contact" class="inline-flex items-center justify-between gap-3 bg-gold text-navy font-medium px-6 py-4 hover:bg-gold-light transition group">
+          <span>Бесплатная консультация</span>
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" class="transition-transform group-hover:translate-x-1"><path d="M13 1L19 7M19 7L13 13M19 7H1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </a>
+        <a href="tel:+78000000000" class="inline-flex items-center justify-between gap-3 border border-cream/30 text-cream font-medium px-6 py-4 hover:border-gold hover:text-gold transition group">
+          <span>Позвонить юристу</span>
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" class="transition-transform group-hover:translate-x-1"><path d="M13 1L19 7M19 7L13 13M19 7H1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- credentials line -->
+    <div class="mt-14 sm:mt-20 lg:mt-28 pt-8 border-t border-cream/10">
+      <dl class="grid grid-cols-1 sm:grid-cols-3 gap-y-6 sm:gap-x-8 lg:gap-x-12">
+        <div>
+          <dt class="text-gold text-xs tracking-widest uppercase mb-2">По закону и по завещанию</dt>
+          <dd class="text-cream/85 text-sm sm:text-base leading-relaxed">Главы 61–63 ГК РФ. Сопровождаем дело от запроса наследственного дела у нотариуса до регистрации права собственности.</dd>
+        </div>
+        <div>
+          <dt class="text-gold text-xs tracking-widest uppercase mb-2">Восстановление сроков</dt>
+          <dd class="text-cream/85 text-sm sm:text-base leading-relaxed">Статьи 1154–1155 ГК РФ. Подаём иск, если шестимесячный срок принятия наследства пропущен по уважительной причине.</dd>
+        </div>
+        <div>
+          <dt class="text-gold text-xs tracking-widest uppercase mb-2">Споры и оспаривание</dt>
+          <dd class="text-cream/85 text-sm sm:text-base leading-relaxed">Обязательная доля, раздел имущества, признание недействительным завещания, защита интересов наследников в суде.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY ================= -->
+<section class="py-20 sm:py-24 lg:py-32 bg-cream-deep">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mb-14 sm:mb-20 reveal">
+      <div class="flex items-center gap-3 text-navy text-xs sm:text-sm tracking-[0.2em] uppercase mb-5 font-medium">
+        <span class="gold-rule"></span>
+        Почему ЯПомогаю
+      </div>
+      <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-navy leading-[1.1]">
+        Узкая специализация. <span class="text-muted">Полная ответственность за результат.</span>
+      </h2>
+    </div>
+
+    <!-- Asymmetric grid: первый блок крупнее -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-12 gap-px bg-line border border-line">
+
+      <div class="bg-cream p-7 sm:p-9 lg:p-10 lg:col-span-7 reveal">
+        <div class="font-heading text-gold font-bold text-2xl mb-6 num-tnum">01</div>
+        <h3 class="font-heading font-bold text-xl sm:text-2xl text-navy mb-4 leading-snug">
+          Только наследство — максимальная экспертиза
+        </h3>
+        <p class="text-muted leading-relaxed">
+          Мы не размениваемся на десятки направлений. Каждый юрист команды занимается исключительно наследственными делами: главы 61–63 ГК РФ, обязательная доля, раздел имущества, оспаривание завещаний. Знаем нюансы практики Верховного Суда и региональных судов.
+        </p>
+      </div>
+
+      <div class="bg-cream p-7 sm:p-9 lg:p-10 lg:col-span-5 reveal">
+        <div class="font-heading text-gold font-bold text-2xl mb-6 num-tnum">02</div>
+        <h3 class="font-heading font-bold text-xl sm:text-2xl text-navy mb-4 leading-snug">
+          Более 150 закрытых дел
+        </h3>
+        <p class="text-muted leading-relaxed">
+          Принятие наследства, восстановление сроков, споры между наследниками, оспаривание завещаний, признание права собственности в порядке наследования. Опыт работы с активами от 500 тысяч до сотен миллионов рублей.
+        </p>
+      </div>
+
+      <div class="bg-cream p-7 sm:p-9 lg:p-10 lg:col-span-5 reveal">
+        <div class="font-heading text-gold font-bold text-2xl mb-6 num-tnum">03</div>
+        <h3 class="font-heading font-bold text-xl sm:text-2xl text-navy mb-4 leading-snug">
+          Под ключ по всей России
+        </h3>
+        <p class="text-muted leading-relaxed">
+          Нотариус — суд — Росреестр. Полное сопровождение в любом регионе РФ: подадим документы, запросим архивные справки, представим интересы дистанционно по доверенности.
+        </p>
+      </div>
+
+      <div class="bg-cream p-7 sm:p-9 lg:p-10 lg:col-span-7 reveal">
+        <div class="font-heading text-gold font-bold text-2xl mb-6 num-tnum">04</div>
+        <h3 class="font-heading font-bold text-xl sm:text-2xl text-navy mb-4 leading-snug">
+          Прозрачные цены и гарантия результата
+        </h3>
+        <p class="text-muted leading-relaxed">
+          Стоимость фиксируется в договоре до начала работ. Никаких скрытых платежей и доплат «по ходу дела». При невозможности достижения результата по обстоятельствам, зависящим от нас, возвращаем оплату по условиям договора. Все условия — в публичной оферте.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="py-20 sm:py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 mb-12 sm:mb-16">
+      <div class="lg:col-span-5 reveal">
+        <div class="flex items-center gap-3 text-navy text-xs sm:text-sm tracking-[0.2em] uppercase mb-5 font-medium">
+          <span class="gold-rule"></span>
+          Пакет «под ключ»
+        </div>
+        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-navy leading-[1.1]">
+          Что входит в сопровождение
+        </h2>
+      </div>
+      <div class="lg:col-span-7 lg:pt-12 reveal">
+        <p class="text-muted text-base sm:text-lg leading-relaxed">
+          Восемь блоков работы, которые покрывают весь жизненный цикл наследственного дела — от проверки документов до выписки из ЕГРН на ваше имя.
+        </p>
+      </div>
+    </div>
+
+    <div class="border-t border-line">
+      <!-- service rows -->
+      <div class="grid md:grid-cols-12 gap-4 md:gap-8 py-7 sm:py-9 border-b border-line reveal">
+        <div class="md:col-span-1 text-gold font-heading font-bold text-lg num-tnum">01</div>
+        <div class="md:col-span-4">
+          <h3 class="font-heading font-bold text-lg sm:text-xl text-navy">Правовой анализ ситуации</h3>
+        </div>
+        <p class="md:col-span-7 text-muted leading-relaxed">
+          Изучаем документы, устанавливаем круг наследников и состав наследственной массы. Определяем порядок принятия — по закону или по завещанию (главы 62 и 63 ГК РФ), выявляем обязательных наследников.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-12 gap-4 md:gap-8 py-7 sm:py-9 border-b border-line reveal">
+        <div class="md:col-span-1 text-gold font-heading font-bold text-lg num-tnum">02</div>
+        <div class="md:col-span-4">
+          <h3 class="font-heading font-bold text-lg sm:text-xl text-navy">Открытие наследственного дела</h3>
+        </div>
+        <p class="md:col-span-7 text-muted leading-relaxed">
+          Подаём заявление нотариусу по месту открытия наследства в установленный шестимесячный срок (ст. 1154 ГК РФ). При необходимости — через ЕИС нотариата дистанционно.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-12 gap-4 md:gap-8 py-7 sm:py-9 border-b border-line reveal">
+        <div class="md:col-span-1 text-gold font-heading font-bold text-lg num-tnum">03</div>
+        <div class="md:col-span-4">
+          <h3 class="font-heading font-bold text-lg sm:text-xl text-navy">Сбор документов</h3>
+        </div>
+        <p class="md:col-span-7 text-muted leading-relaxed">
+          Запрашиваем выписки из ЕГРН, справки из ЗАГС, банковские справки, ПТС и иные документы. Восстанавливаем недостающие — через архивы, МФЦ и нотариальные запросы.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-12 gap-4 md:gap-8 py-7 sm:py-9 border-b border-line reveal">
+        <div class="md:col-span-1 text-gold font-heading font-bold text-lg num-tnum">04</div>
+        <div class="md:col-span-4">
+          <h3 class="font-heading font-bold text-lg sm:text-xl text-navy">Восстановление пропущенных сроков</h3>
+        </div>
+        <p class="md:col-span-7 text-muted leading-relaxed">
+          Если шестимесячный срок упущен — подаём иск о восстановлении срока принятия наследства по ст. 1155 ГК РФ. Обосновываем уважительность причин, представляем интересы в суде.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-12 gap-4 md:gap-8 py-7 sm:py-9 border-b border-line reveal">
+        <div class="md:col-span-1 text-gold font-heading font-bold text-lg num-tnum">05</div>
+        <div class="md:col-span-4">
+          <h3 class="font-heading font-bold text-lg sm:text-xl text-navy">Оспаривание завещания</h3>
+        </div>
+        <p class="md:col-span-7 text-muted leading-relaxed">
+          Признаём завещание недействительным в судебном порядке: по основаниям недееспособности завещателя, нарушения формы, обмана или угрозы. Назначаем посмертные психолого-психиатрические экспертизы.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-12 gap-4 md:gap-8 py-7 sm:py-9 border-b border-line reveal">
+        <div class="md:col-span-1 text-gold font-heading font-bold text-lg num-tnum">06</div>
+        <div class="md:col-span-4">
+          <h3 class="font-heading font-bold text-lg sm:text-xl text-navy">Раздел наследственного имущества</h3>
+        </div>
+        <p class="md:col-span-7 text-muted leading-relaxed">
+          Готовим соглашение о разделе наследства между наследниками (ст. 1165 ГК РФ). При невозможности договориться — обращаемся в суд с учётом преимущественного права и компенсаций.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-12 gap-4 md:gap-8 py-7 sm:py-9 border-b border-line reveal">
+        <div class="md:col-span-1 text-gold font-heading font-bold text-lg num-tnum">07</div>
+        <div class="md:col-span-4">
+          <h3 class="font-heading font-bold text-lg sm:text-xl text-navy">Защита обязательной доли</h3>
+        </div>
+        <p class="md:col-span-7 text-muted leading-relaxed">
+          Несовершеннолетние, нетрудоспособные дети, супруг и иждивенцы получают обязательную долю независимо от содержания завещания (ст. 1149 ГК РФ). Защищаем их интересы и рассчитываем долю.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-12 gap-4 md:gap-8 py-7 sm:py-9 border-b border-line reveal">
+        <div class="md:col-span-1 text-gold font-heading font-bold text-lg num-tnum">08</div>
+        <div class="md:col-span-4">
+          <h3 class="font-heading font-bold text-lg sm:text-xl text-navy">Регистрация права собственности</h3>
+        </div>
+        <p class="md:col-span-7 text-muted leading-relaxed">
+          После получения свидетельства о праве на наследство — подаём документы в Росреестр. Передаём выписку из ЕГРН на ваше имя. Регистрируем переход прав на доли, недвижимость, автотранспорт.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-12 sm:mt-14 flex flex-wrap items-center gap-4">
+      <a href="#contact" class="inline-flex items-center gap-2 bg-navy text-cream font-medium px-6 py-3.5 hover:bg-navy-deep transition">
+        Получить бесплатную консультацию
+      </a>
+      <a href="tel:+78000000000" class="inline-flex items-center gap-2 text-navy font-medium border-b border-gold pb-0.5 hover:text-gold transition">
+        Или позвоните: 8 (800) 000-00-00
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section id="process" class="py-20 sm:py-24 lg:py-32 bg-navy text-cream">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mb-14 sm:mb-20">
+      <div class="flex items-center gap-3 text-gold text-xs sm:text-sm tracking-[0.2em] uppercase mb-5 font-medium">
+        <span class="gold-rule"></span>
+        Процесс работы
+      </div>
+      <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-[1.1]">
+        Пять шагов от первой консультации <span class="text-gold">до выписки из ЕГРН</span>
+      </h2>
+    </div>
+
+    <ol class="grid md:grid-cols-2 lg:grid-cols-5 gap-px bg-cream/10">
+      <li class="bg-navy p-6 sm:p-8 reveal">
+        <div class="text-gold text-sm font-heading font-bold num-tnum mb-5">Шаг 01</div>
+        <h3 class="font-heading font-bold text-lg sm:text-xl mb-3 leading-snug">Бесплатная консультация</h3>
+        <p class="text-cream/75 text-sm leading-relaxed">
+          Изучаем вашу ситуацию по телефону или мессенджеру. Объясняем порядок действий, сроки и состав работ.
+        </p>
+      </li>
+      <li class="bg-navy p-6 sm:p-8 reveal">
+        <div class="text-gold text-sm font-heading font-bold num-tnum mb-5">Шаг 02</div>
+        <h3 class="font-heading font-bold text-lg sm:text-xl mb-3 leading-snug">Договор и фиксация цены</h3>
+        <p class="text-cream/75 text-sm leading-relaxed">
+          Заключаем договор оказания юридических услуг с твёрдой ценой и составом работ. Без скрытых платежей.
+        </p>
+      </li>
+      <li class="bg-navy p-6 sm:p-8 reveal">
+        <div class="text-gold text-sm font-heading font-bold num-tnum mb-5">Шаг 03</div>
+        <h3 class="font-heading font-bold text-lg sm:text-xl mb-3 leading-snug">Открытие дела и сбор документов</h3>
+        <p class="text-cream/75 text-sm leading-relaxed">
+          Подаём заявление нотариусу, запрашиваем выписки и архивные справки. Восстанавливаем недостающее.
+        </p>
+      </li>
+      <li class="bg-navy p-6 sm:p-8 reveal">
+        <div class="text-gold text-sm font-heading font-bold num-tnum mb-5">Шаг 04</div>
+        <h3 class="font-heading font-bold text-lg sm:text-xl mb-3 leading-snug">Суд или нотариус</h3>
+        <p class="text-cream/75 text-sm leading-relaxed">
+          Если дело без спора — получаем свидетельство у нотариуса. Если со спором — представляем вас в суде.
+        </p>
+      </li>
+      <li class="bg-navy p-6 sm:p-8 reveal">
+        <div class="text-gold text-sm font-heading font-bold num-tnum mb-5">Шаг 05</div>
+        <h3 class="font-heading font-bold text-lg sm:text-xl mb-3 leading-snug">Регистрация в Росреестре</h3>
+        <p class="text-cream/75 text-sm leading-relaxed">
+          Подаём документы для регистрации права собственности. Передаём вам выписку из ЕГРН.
+        </p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= CASES ================= -->
+<section id="cases" class="py-20 sm:py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mb-14 sm:mb-20 reveal">
+      <div class="flex items-center gap-3 text-navy text-xs sm:text-sm tracking-[0.2em] uppercase mb-5 font-medium">
+        <span class="gold-rule"></span>
+        Кейсы из практики
+      </div>
+      <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-navy leading-[1.1]">
+        Реальные дела. <span class="text-muted">Имена изменены, исход подтверждён.</span>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-px bg-line border border-line">
+
+      <article class="bg-cream p-7 sm:p-9 lg:p-10 reveal">
+        <div class="flex items-baseline justify-between gap-4 mb-5 flex-wrap">
+          <span class="text-xs uppercase tracking-widest text-muted-light">Дело № 1</span>
+          <span class="text-gold text-sm font-medium">Восстановление срока</span>
+        </div>
+        <h3 class="font-heading font-bold text-xl sm:text-2xl text-navy mb-4 leading-snug">
+          Срок пропущен на 4 года — наследство восстановлено
+        </h3>
+        <p class="text-muted leading-relaxed mb-5">
+          Клиент узнал о смерти отца спустя четыре года, проживая в другом регионе. Через суд восстановили срок принятия наследства по ст. 1155 ГК РФ, доказав уважительность причин пропуска. Признано право собственности на квартиру в Москве.
+        </p>
+        <div class="pt-5 border-t border-line flex justify-between text-sm">
+          <span class="text-muted">Срок дела</span>
+          <span class="font-medium text-navy">7 месяцев</span>
+        </div>
+      </article>
+
+      <article class="bg-cream p-7 sm:p-9 lg:p-10 reveal">
+        <div class="flex items-baseline justify-between gap-4 mb-5 flex-wrap">
+          <span class="text-xs uppercase tracking-widest text-muted-light">Дело № 2</span>
+          <span class="text-gold text-sm font-medium">Оспаривание завещания</span>
+        </div>
+        <h3 class="font-heading font-bold text-xl sm:text-2xl text-navy mb-4 leading-snug">
+          Завещание в пользу сиделки признано недействительным
+        </h3>
+        <p class="text-muted leading-relaxed mb-5">
+          Сын оспорил завещание, по которому всё имущество отходило сиделке. Назначили посмертную психолого-психиатрическую экспертизу. Суд установил, что завещатель не понимал значения своих действий, и признал завещание недействительным.
+        </p>
+        <div class="pt-5 border-t border-line flex justify-between text-sm">
+          <span class="text-muted">Стоимость имущества</span>
+          <span class="font-medium text-navy">≈ 22 млн ₽</span>
+        </div>
+      </article>
+
+      <article class="bg-cream p-7 sm:p-9 lg:p-10 reveal">
+        <div class="flex items-baseline justify-between gap-4 mb-5 flex-wrap">
+          <span class="text-xs uppercase tracking-widest text-muted-light">Дело № 3</span>
+          <span class="text-gold text-sm font-medium">Раздел имущества</span>
+        </div>
+        <h3 class="font-heading font-bold text-xl sm:text-2xl text-navy mb-4 leading-snug">
+          Раздел между четырьмя наследниками без суда
+        </h3>
+        <p class="text-muted leading-relaxed mb-5">
+          Четыре наследника не могли договориться о судьбе наследственной массы: квартира, дача, автомобиль и доля в ООО. Подготовили соглашение о разделе с компенсациями. Спор урегулирован без обращения в суд.
+        </p>
+        <div class="pt-5 border-t border-line flex justify-between text-sm">
+          <span class="text-muted">Срок дела</span>
+          <span class="font-medium text-navy">3 месяца</span>
+        </div>
+      </article>
+
+      <article class="bg-cream p-7 sm:p-9 lg:p-10 reveal">
+        <div class="flex items-baseline justify-between gap-4 mb-5 flex-wrap">
+          <span class="text-xs uppercase tracking-widest text-muted-light">Дело № 4</span>
+          <span class="text-gold text-sm font-medium">Обязательная доля</span>
+        </div>
+        <h3 class="font-heading font-bold text-xl sm:text-2xl text-navy mb-4 leading-snug">
+          Защита прав нетрудоспособного супруга
+        </h3>
+        <p class="text-muted leading-relaxed mb-5">
+          По завещанию всё имущество переходило к племяннице. Пенсионер-супруг был исключён из числа наследников. Через суд признали право на обязательную долю (ст. 1149 ГК РФ) — половину от законной доли.
+        </p>
+        <div class="pt-5 border-t border-line flex justify-between text-sm">
+          <span class="text-muted">Полученная доля</span>
+          <span class="font-medium text-navy">1/4 имущества</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section class="py-20 sm:py-24 lg:py-32 bg-cream-deep">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mb-14 sm:mb-20 reveal">
+      <div class="flex items-center gap-3 text-navy text-xs sm:text-sm tracking-[0.2em] uppercase mb-5 font-medium">
+        <span class="gold-rule"></span>
+        Отзывы клиентов
+      </div>
+      <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-navy leading-[1.1]">
+        Что говорят те, кому мы помогли
+      </h2>
+    </div>
+
+    <!-- Staggered masonry-like grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+
+      <figure class="bg-cream p-6 sm:p-8 border border-line lift reveal lg:col-span-2">
+        <svg class="text-gold mb-5" width="32" height="24" viewBox="0 0 32 24" fill="currentColor"><path d="M0 24V14C0 6.27 5.05 0.63 14 0V6C9.55 6.63 7 9.27 7 14H14V24H0ZM18 24V14C18 6.27 23.05 0.63 32 0V6C27.55 6.63 25 9.27 25 14H32V24H18Z"/></svg>
+        <blockquote class="text-ink text-base sm:text-lg leading-relaxed">
+          Отец умер за границей, наследство в России. Я была в полной растерянности — куда подавать, какие документы. Команда взяла на себя всё: запросили справки, открыли дело, подали в Росреестр. Через четыре месяца я получила выписку на квартиру.
+        </blockquote>
+        <figcaption class="mt-7 pt-5 border-t border-line flex items-center justify-between">
+          <div>
+            <div class="font-heading font-bold text-navy">Ирина М.</div>
+            <div class="text-sm text-muted-light">Москва · Принятие наследства по закону</div>
+          </div>
+          <div class="text-gold text-sm font-medium">★★★★★</div>
+        </figcaption>
+      </figure>
+
+      <figure class="bg-cream p-6 sm:p-8 border border-line lift reveal">
+        <svg class="text-gold mb-5" width="32" height="24" viewBox="0 0 32 24" fill="currentColor"><path d="M0 24V14C0 6.27 5.05 0.63 14 0V6C9.55 6.63 7 9.27 7 14H14V24H0ZM18 24V14C18 6.27 23.05 0.63 32 0V6C27.55 6.63 25 9.27 25 14H32V24H18Z"/></svg>
+        <blockquote class="text-ink text-base leading-relaxed">
+          Восстановили срок принятия наследства, упущенный на полтора года. Чётко, без воды и пустых обещаний. Цену озвучили сразу и не меняли.
+        </blockquote>
+        <figcaption class="mt-6 pt-5 border-t border-line">
+          <div class="font-heading font-bold text-navy">Андрей К.</div>
+          <div class="text-sm text-muted-light">Екатеринбург · Восстановление срока</div>
+        </figcaption>
+      </figure>
+
+      <figure class="bg-cream p-6 sm:p-8 border border-line lift reveal">
+        <svg class="text-gold mb-5" width="32" height="24" viewBox="0 0 32 24" fill="currentColor"><path d="M0 24V14C0 6.27 5.05 0.63 14 0V6C9.55 6.63 7 9.27 7 14H14V24H0ZM18 24V14C18 6.27 23.05 0.63 32 0V6C27.55 6.63 25 9.27 25 14H32V24H18Z"/></svg>
+        <blockquote class="text-ink text-base leading-relaxed">
+          Сестра пыталась оспорить завещание матери. Юристы ЯПомогаю отбили все претензии, доказали в суде действительность последней воли мамы. Спасибо за поддержку, в тяжёлое время это было важно.
+        </blockquote>
+        <figcaption class="mt-6 pt-5 border-t border-line">
+          <div class="font-heading font-bold text-navy">Дмитрий В.</div>
+          <div class="text-sm text-muted-light">Санкт-Петербург · Защита от оспаривания</div>
+        </figcaption>
+      </figure>
+
+      <figure class="bg-cream p-6 sm:p-8 border border-line lift reveal">
+        <svg class="text-gold mb-5" width="32" height="24" viewBox="0 0 32 24" fill="currentColor"><path d="M0 24V14C0 6.27 5.05 0.63 14 0V6C9.55 6.63 7 9.27 7 14H14V24H0ZM18 24V14C18 6.27 23.05 0.63 32 0V6C27.55 6.63 25 9.27 25 14H32V24H18Z"/></svg>
+        <blockquote class="text-ink text-base leading-relaxed">
+          У меня доля в квартире в Самаре, а я живу в Москве. Решили всё дистанционно по доверенности. Удобно, профессионально, без неожиданных счетов.
+        </blockquote>
+        <figcaption class="mt-6 pt-5 border-t border-line">
+          <div class="font-heading font-bold text-navy">Елена С.</div>
+          <div class="text-sm text-muted-light">Москва — Самара · Сопровождение в регионе</div>
+        </figcaption>
+      </figure>
+
+      <figure class="bg-cream p-6 sm:p-8 border border-line lift reveal lg:col-span-2">
+        <svg class="text-gold mb-5" width="32" height="24" viewBox="0 0 32 24" fill="currentColor"><path d="M0 24V14C0 6.27 5.05 0.63 14 0V6C9.55 6.63 7 9.27 7 14H14V24H0ZM18 24V14C18 6.27 23.05 0.63 32 0V6C27.55 6.63 25 9.27 25 14H32V24H18Z"/></svg>
+        <blockquote class="text-ink text-base sm:text-lg leading-relaxed">
+          Наследников было пятеро, все ссорились. Юристы ЯПомогаю.рф подготовили соглашение о разделе с компенсациями — каждый получил свою часть без судов. Сэкономили нам нервы, время и десятки тысяч на пошлинах. Рекомендую всем, кто столкнулся с похожим.
+        </blockquote>
+        <figcaption class="mt-7 pt-5 border-t border-line flex items-center justify-between">
+          <div>
+            <div class="font-heading font-bold text-navy">Олег Т.</div>
+            <div class="text-sm text-muted-light">Краснодар · Раздел имущества между наследниками</div>
+          </div>
+          <div class="text-gold text-sm font-medium">★★★★★</div>
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="py-20 sm:py-24 lg:py-32">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-12 sm:mb-16 reveal">
+      <div class="flex items-center gap-3 text-navy text-xs sm:text-sm tracking-[0.2em] uppercase mb-5 font-medium">
+        <span class="gold-rule"></span>
+        Частые вопросы
+      </div>
+      <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-navy leading-[1.1]">
+        Что обычно спрашивают
+      </h2>
+    </div>
+
+    <div class="border-t border-line">
+
+      <div class="faq-item border-b border-line">
+        <button class="faq-toggle w-full flex items-start sm:items-center justify-between gap-6 py-6 sm:py-7 text-left group">
+          <span class="font-heading font-medium text-navy text-base sm:text-lg lg:text-xl pr-4 leading-snug">В какой срок нужно вступить в наследство?</span>
+          <span class="faq-plus text-gold text-2xl font-light leading-none mt-1 sm:mt-0 flex-shrink-0">+</span>
+        </button>
+        <div class="faq-panel">
+          <div>
+            <p class="pb-7 text-muted leading-relaxed pr-12">
+              Шесть месяцев со дня открытия наследства — день смерти наследодателя или день вступления в силу решения суда о признании умершим (ст. 1154 ГК РФ). Заявление подаётся нотариусу по месту открытия наследства. Если срок пропущен, его можно восстановить через суд при наличии уважительных причин (ст. 1155 ГК РФ).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-line">
+        <button class="faq-toggle w-full flex items-start sm:items-center justify-between gap-6 py-6 sm:py-7 text-left group">
+          <span class="font-heading font-medium text-navy text-base sm:text-lg lg:text-xl pr-4 leading-snug">Что входит в стоимость «под ключ»?</span>
+          <span class="faq-plus text-gold text-2xl font-light leading-none mt-1 sm:mt-0 flex-shrink-0">+</span>
+        </button>
+        <div class="faq-panel">
+          <div>
+            <p class="pb-7 text-muted leading-relaxed pr-12">
+              Правовой анализ, открытие наследственного дела, сбор и подача документов, представительство у нотариуса и в суде (при необходимости), регистрация права собственности в Росреестре. Нотариальные тарифы и государственная пошлина оплачиваются дополнительно по официальным тарифам нотариуса и суда.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-line">
+        <button class="faq-toggle w-full flex items-start sm:items-center justify-between gap-6 py-6 sm:py-7 text-left group">
+          <span class="font-heading font-medium text-navy text-base sm:text-lg lg:text-xl pr-4 leading-snug">Можно ли вступить в наследство, если пропущен шестимесячный срок?</span>
+          <span class="faq-plus text-gold text-2xl font-light leading-none mt-1 sm:mt-0 flex-shrink-0">+</span>
+        </button>
+        <div class="faq-panel">
+          <div>
+            <p class="pb-7 text-muted leading-relaxed pr-12">
+              Да, если причины пропуска были уважительными: вы не знали о смерти наследодателя, тяжёлая болезнь, нахождение в отдалённом регионе, служба в армии. Срок восстанавливается по ст. 1155 ГК РФ через суд. Альтернатива — получить письменное согласие остальных наследников (внесудебный порядок).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-line">
+        <button class="faq-toggle w-full flex items-start sm:items-center justify-between gap-6 py-6 sm:py-7 text-left group">
+          <span class="font-heading font-medium text-navy text-base sm:text-lg lg:text-xl pr-4 leading-snug">Чем отличается наследование по закону от наследования по завещанию?</span>
+          <span class="faq-plus text-gold text-2xl font-light leading-none mt-1 sm:mt-0 flex-shrink-0">+</span>
+        </button>
+        <div class="faq-panel">
+          <div>
+            <p class="pb-7 text-muted leading-relaxed pr-12">
+              По закону (глава 63 ГК РФ) — имущество распределяется между родственниками в порядке очередей, начиная с первой (супруг, дети, родители). По завещанию (глава 62 ГК РФ) — имущество получает тот, кого указал наследодатель. Завещание имеет приоритет, но не отменяет права обязательных наследников (ст. 1149 ГК РФ).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-line">
+        <button class="faq-toggle w-full flex items-start sm:items-center justify-between gap-6 py-6 sm:py-7 text-left group">
+          <span class="font-heading font-medium text-navy text-base sm:text-lg lg:text-xl pr-4 leading-snug">Кто имеет право на обязательную долю в наследстве?</span>
+          <span class="faq-plus text-gold text-2xl font-light leading-none mt-1 sm:mt-0 flex-shrink-0">+</span>
+        </button>
+        <div class="faq-panel">
+          <div>
+            <p class="pb-7 text-muted leading-relaxed pr-12">
+              Несовершеннолетние или нетрудоспособные дети наследодателя, его нетрудоспособный супруг и родители, а также нетрудоспособные иждивенцы (ст. 1149 ГК РФ). Им положено не менее половины доли, которая причиталась бы каждому из них при наследовании по закону, независимо от содержания завещания.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-line">
+        <button class="faq-toggle w-full flex items-start sm:items-center justify-between gap-6 py-6 sm:py-7 text-left group">
+          <span class="font-heading font-medium text-navy text-base sm:text-lg lg:text-xl pr-4 leading-snug">На каких основаниях можно оспорить завещание?</span>
+          <span class="faq-plus text-gold text-2xl font-light leading-none mt-1 sm:mt-0 flex-shrink-0">+</span>
+        </button>
+        <div class="faq-panel">
+          <div>
+            <p class="pb-7 text-muted leading-relaxed pr-12">
+              Основные основания: завещатель не понимал значения своих действий (недееспособность), завещание составлено под угрозой или обманом, нарушена форма завещания, отсутствуют необходимые свидетели или подпись. Для подтверждения психического состояния назначается посмертная психолого-психиатрическая экспертиза. Срок исковой давности — три года (ст. 181 ГК РФ).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-line">
+        <button class="faq-toggle w-full flex items-start sm:items-center justify-between gap-6 py-6 sm:py-7 text-left group">
+          <span class="font-heading font-medium text-navy text-base sm:text-lg lg:text-xl pr-4 leading-snug">Как делится имущество между несколькими наследниками?</span>
+          <span class="faq-plus text-gold text-2xl font-light leading-none mt-1 sm:mt-0 flex-shrink-0">+</span>
+        </button>
+        <div class="faq-panel">
+          <div>
+            <p class="pb-7 text-muted leading-relaxed pr-12">
+              При наследовании по закону доли наследников одной очереди признаются равными. После получения свидетельств наследники могут заключить соглашение о разделе наследственного имущества (ст. 1165 ГК РФ) с любыми условиями. При невозможности договориться — раздел осуществляется в судебном порядке с учётом преимущественного права на неделимую вещь и денежных компенсаций.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-line">
+        <button class="faq-toggle w-full flex items-start sm:items-center justify-between gap-6 py-6 sm:py-7 text-left group">
+          <span class="font-heading font-medium text-navy text-base sm:text-lg lg:text-xl pr-4 leading-snug">Переходят ли долги наследодателя к наследникам?</span>
+          <span class="faq-plus text-gold text-2xl font-light leading-none mt-1 sm:mt-0 flex-shrink-0">+</span>
+        </button>
+        <div class="faq-panel">
+          <div>
+            <p class="pb-7 text-muted leading-relaxed pr-12">
+              Да, наследники отвечают по долгам наследодателя солидарно, но в пределах стоимости перешедшего к ним наследственного имущества (ст. 1175 ГК РФ). Если долги превышают стоимость наследства — отвечать собственным имуществом не придётся. Это важно учитывать при принятии решения о принятии наследства.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-line">
+        <button class="faq-toggle w-full flex items-start sm:items-center justify-between gap-6 py-6 sm:py-7 text-left group">
+          <span class="font-heading font-medium text-navy text-base sm:text-lg lg:text-xl pr-4 leading-snug">Можно ли отказаться от наследства?</span>
+          <span class="faq-plus text-gold text-2xl font-light leading-none mt-1 sm:mt-0 flex-shrink-0">+</span>
+        </button>
+        <div class="faq-panel">
+          <div>
+            <p class="pb-7 text-muted leading-relaxed pr-12">
+              Да, наследник может отказаться от наследства в течение шести месяцев со дня открытия (ст. 1157 ГК РФ). Отказ возможен в пользу других наследников по закону или по завещанию, либо без указания лиц. После принятия наследства отказаться нельзя. Отказ необратим.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-line">
+        <button class="faq-toggle w-full flex items-start sm:items-center justify-between gap-6 py-6 sm:py-7 text-left group">
+          <span class="font-heading font-medium text-navy text-base sm:text-lg lg:text-xl pr-4 leading-snug">Можно ли оформить наследство удалённо, в другом регионе?</span>
+          <span class="faq-plus text-gold text-2xl font-light leading-none mt-1 sm:mt-0 flex-shrink-0">+</span>
+        </button>
+        <div class="faq-panel">
+          <div>
+            <p class="pb-7 text-muted leading-relaxed pr-12">
+              Да. Мы работаем по всей территории Российской Федерации. На основании нотариальной доверенности представляем интересы клиента в нотариальной конторе, суде и Росреестре в любом регионе. Часть процедур ведётся через Единую информационную систему нотариата.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-line">
+        <button class="faq-toggle w-full flex items-start sm:items-center justify-between gap-6 py-6 sm:py-7 text-left group">
+          <span class="font-heading font-medium text-navy text-base sm:text-lg lg:text-xl pr-4 leading-snug">Сколько длится оформление наследства?</span>
+          <span class="faq-plus text-gold text-2xl font-light leading-none mt-1 sm:mt-0 flex-shrink-0">+</span>
+        </button>
+        <div class="faq-panel">
+          <div>
+            <p class="pb-7 text-muted leading-relaxed pr-12">
+              При отсутствии спора — около 6–8 месяцев: шестимесячный срок принятия плюс 1–2 месяца на сбор документов и регистрацию. При наличии спора (восстановление срока, оспаривание завещания, раздел) — добавляется срок судебного разбирательства, обычно 4–10 месяцев.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item border-b border-line">
+        <button class="faq-toggle w-full flex items-start sm:items-center justify-between gap-6 py-6 sm:py-7 text-left group">
+          <span class="font-heading font-medium text-navy text-base sm:text-lg lg:text-xl pr-4 leading-snug">Какие документы нужны для начала работы?</span>
+          <span class="faq-plus text-gold text-2xl font-light leading-none mt-1 sm:mt-0 flex-shrink-0">+</span>
+        </button>
+        <div class="faq-panel">
+          <div>
+            <p class="pb-7 text-muted leading-relaxed pr-12">
+              Для первой консультации достаточно паспорта и общей информации о наследодателе и имуществе. Для открытия дела понадобятся свидетельство о смерти, документы о родстве (свидетельство о рождении, браке), документы на имущество. Недостающее запросим через архивы и нотариальные запросы самостоятельно.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-20 sm:py-24 lg:py-32 bg-navy text-cream">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+
+      <div class="lg:col-span-5">
+        <div class="flex items-center gap-3 text-gold text-xs sm:text-sm tracking-[0.2em] uppercase mb-5 font-medium">
+          <span class="gold-rule"></span>
+          Связаться с нами
+        </div>
+        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-[1.1]">
+          Бесплатная консультация по вашему делу
+        </h2>
+        <p class="mt-6 text-cream/75 text-base sm:text-lg leading-relaxed">
+          Опишите ситуацию — расскажем порядок действий, сроки и стоимость. Консультация ни к чему не обязывает.
+        </p>
+
+        <div class="mt-10 space-y-5">
+          <a href="https://wa.me/79000000000" target="_blank" rel="noopener" class="flex items-center gap-4 p-4 border border-cream/15 hover:border-gold transition group">
+            <span class="w-10 h-10 flex items-center justify-center bg-gold text-navy flex-shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+            </span>
+            <div>
+              <div class="text-xs uppercase tracking-widest text-cream/60">WhatsApp</div>
+              <div class="font-medium">+7 (900) 000-00-00</div>
+            </div>
+            <svg class="ml-auto opacity-50 group-hover:opacity-100 transition" width="16" height="16" viewBox="0 0 20 14" fill="none"><path d="M13 1L19 7M19 7L13 13M19 7H1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </a>
+
+          <a href="https://t.me/yapomogayu" target="_blank" rel="noopener" class="flex items-center gap-4 p-4 border border-cream/15 hover:border-gold transition group">
+            <span class="w-10 h-10 flex items-center justify-center bg-gold text-navy flex-shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+            </span>
+            <div>
+              <div class="text-xs uppercase tracking-widest text-cream/60">Telegram</div>
+              <div class="font-medium">@yapomogayu</div>
+            </div>
+            <svg class="ml-auto opacity-50 group-hover:opacity-100 transition" width="16" height="16" viewBox="0 0 20 14" fill="none"><path d="M13 1L19 7M19 7L13 13M19 7H1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </a>
+
+          <a href="tel:+78000000000" class="flex items-center gap-4 p-4 border border-cream/15 hover:border-gold transition group">
+            <span class="w-10 h-10 flex items-center justify-center bg-gold text-navy flex-shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </span>
+            <div>
+              <div class="text-xs uppercase tracking-widest text-cream/60">Телефон</div>
+              <div class="font-medium">8 (800) 000-00-00</div>
+            </div>
+            <svg class="ml-auto opacity-50 group-hover:opacity-100 transition" width="16" height="16" viewBox="0 0 20 14" fill="none"><path d="M13 1L19 7M19 7L13 13M19 7H1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7">
+        <form id="leadForm" class="bg-cream text-ink p-6 sm:p-8 lg:p-10 space-y-5">
+          <div>
+            <label class="block text-sm font-medium text-ink mb-2" for="name">Ваше имя</label>
+            <input id="name" name="name" type="text" required placeholder="Как к вам обращаться" class="field-input">
+          </div>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-sm font-medium text-ink mb-2" for="phone">Телефон</label>
+              <input id="phone" name="phone" type="tel" required placeholder="+7 ___ ___ __ __" class="field-input">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-ink mb-2" for="email">Email (необязательно)</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" class="field-input">
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-ink mb-2" for="topic">Кратко о ситуации</label>
+            <textarea id="topic" name="topic" rows="4" placeholder="Например: пропущен срок принятия наследства на квартиру в Москве, два наследника" class="field-input resize-none"></textarea>
+          </div>
+
+          <label class="flex items-start gap-3 text-sm text-muted leading-relaxed cursor-pointer">
+            <input type="checkbox" required class="mt-1 w-4 h-4 accent-navy flex-shrink-0">
+            <span>Согласен с <a href="#privacy" class="text-navy border-b border-gold pb-0.5 hover:text-gold transition">политикой обработки персональных данных</a> и условиями <a href="#offer" class="text-navy border-b border-gold pb-0.5 hover:text-gold transition">публичной оферты</a>.</span>
+          </label>
+
+          <button type="submit" class="w-full bg-navy text-cream font-medium py-4 hover:bg-navy-deep transition flex items-center justify-center gap-3 group">
+            Получить бесплатную консультацию
+            <svg width="18" height="12" viewBox="0 0 20 14" fill="none" class="transition-transform group-hover:translate-x-1"><path d="M13 1L19 7M19 7L13 13M19 7H1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </button>
+
+          <div id="formSuccess" class="hidden text-sm text-navy bg-gold-pale border border-gold p-4">
+            Заявка отправлена. Свяжемся с вами в ближайшее время.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-navy-deep text-cream/70 py-12 sm:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-12 gap-8 sm:gap-10 mb-10 sm:mb-12">
+      <div class="md:col-span-5">
+        <a href="#top" class="inline-flex items-center gap-3 group">
+          <span class="w-10 h-10 bg-cream text-navy flex items-center justify-center font-heading font-bold text-lg">Я</span>
+          <span class="font-heading font-bold text-cream text-lg">ЯПомогаю<span class="text-gold">.рф</span></span>
+        </a>
+        <p class="mt-5 text-sm leading-relaxed max-w-md">
+          Сеть юридических услуг. Узкопрофильное направление: оформление наследства, восстановление сроков, оспаривание завещаний, наследственные споры.
+        </p>
+      </div>
+      <div class="md:col-span-3">
+        <div class="text-xs uppercase tracking-widest text-gold mb-4 font-medium">Услуга</div>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#services" class="hover:text-cream transition">Что входит в пакет</a></li>
+          <li><a href="#process" class="hover:text-cream transition">Как работаем</a></li>
+          <li><a href="#cases" class="hover:text-cream transition">Кейсы</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4">
+        <div class="text-xs uppercase tracking-widest text-gold mb-4 font-medium">Контакты</div>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="tel:+78000000000" class="hover:text-cream transition">8 (800) 000-00-00</a></li>
+          <li><a href="https://wa.me/79000000000" target="_blank" rel="noopener" class="hover:text-cream transition">WhatsApp</a></li>
+          <li><a href="https://t.me/yapomogayu" target="_blank" rel="noopener" class="hover:text-cream transition">Telegram @yapomogayu</a></li>
+          <li><a href="mailto:hello@yapomogayu.rf" class="hover:text-cream transition">hello@yapomogayu.rf</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pt-8 border-t border-cream/10 flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center justify-between text-xs sm:text-sm">
+      <div>© <span class="num-tnum">2025</span> ЯПомогаю.рф — Все права защищены.</div>
+      <div class="flex flex-wrap gap-x-6 gap-y-2">
+        <a href="https://yapomogayu.rf" class="hover:text-cream transition">yapomogayu.rf</a>
+        <a href="#privacy" class="hover:text-cream transition">Политика конфиденциальности</a>
+        <a href="#offer" class="hover:text-cream transition">Публичная оферта</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= LEGAL DOCS ================= -->
+<section class="bg-cream py-16 sm:py-20 border-t border-line">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Privacy -->
+    <div id="privacy" class="legal-item border-b border-line">
+      <button class="legal-toggle w-full flex items-start justify-between gap-6 py-6 text-left">
+        <div>
+          <div class="text-xs uppercase tracking-widest text-muted-light mb-2">Правовая информация</div>
+          <h3 class="font-heading font-bold text-xl sm:text-2xl text-navy leading-snug">Политика конфиденциальности</h3>
+        </div>
+        <span class="legal-plus text-gold text-3xl font-light leading-none mt-3 flex-shrink-0">+</span>
+      </button>
+      <div class="legal-panel">
+        <div>
+          <div class="pb-10 pr-2 sm:pr-12 text-sm sm:text-base text-muted leading-relaxed space-y-5">
+
+            <p><strong class="text-navy font-medium">1. Общие положения.</strong> Настоящая Политика обработки персональных данных (далее — «Политика») разработана в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению их безопасности, осуществляемые оператором — юридической сетью «ЯПомогаю.рф» (далее — «Оператор»).</p>
+
+            <p><strong class="text-navy font-medium">2. Основные понятия.</strong> Персональные данные — любая информация, относящаяся к прямо или косвенно определённому или определяемому физическому лицу (субъекту персональных данных). Обработка персональных данных — любое действие или совокупность действий, совершаемых с использованием средств автоматизации или без таковых с персональными данными.</p>
+
+            <p><strong class="text-navy font-medium">3. Категории субъектов и состав данных.</strong> Оператор обрабатывает персональные данные посетителей сайта и клиентов: фамилию, имя, отчество, номер телефона, адрес электронной почты, описание правовой ситуации, иные данные, добровольно предоставленные субъектом через формы обратной связи.</p>
+
+            <p><strong class="text-navy font-medium">4. Цели обработки.</strong> Связь с пользователем для оказания консультаций и юридических услуг, заключение и исполнение договора, информирование о статусе работ по делу, рассылка информационных сообщений (при наличии согласия), исполнение требований законодательства Российской Федерации.</p>
+
+            <p><strong class="text-navy font-medium">5. Правовые основания.</strong> Обработка персональных данных осуществляется на основании согласия субъекта персональных данных, для исполнения договора, по которому субъект является стороной, а также для целей, предусмотренных международным договором Российской Федерации или законом.</p>
+
+            <p><strong class="text-navy font-medium">6. Порядок и условия обработки.</strong> Обработка персональных данных осуществляется с соблюдением принципов и правил, предусмотренных Федеральным законом № 152-ФЗ. Оператор обрабатывает персональные данные смешанным способом (как с использованием средств автоматизации, так и без них) при соблюдении конфиденциальности.</p>
+
+            <p><strong class="text-navy font-medium">7. Передача третьим лицам.</strong> Оператор вправе передавать персональные данные третьим лицам только в случаях, прямо предусмотренных законодательством, либо на основании согласия субъекта (нотариусы, суды, государственные органы — в рамках оказания юридической помощи).</p>
+
+            <p><strong class="text-navy font-medium">8. Сроки обработки.</strong> Персональные данные обрабатываются в течение срока, необходимого для достижения целей обработки, либо до отзыва согласия субъектом. После достижения целей обработки или отзыва согласия данные подлежат уничтожению, если иное не предусмотрено законодательством.</p>
+
+            <p><strong class="text-navy font-medium">9. Права субъекта.</strong> Субъект персональных данных имеет право получать информацию об обработке своих данных, требовать их уточнения, блокирования или уничтожения, отзывать согласие на обработку, обжаловать действия Оператора в Роскомнадзоре или в судебном порядке.</p>
+
+            <p><strong class="text-navy font-medium">10. Меры защиты.</strong> Оператор принимает необходимые правовые, организационные и технические меры для защиты персональных данных от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий в отношении персональных данных.</p>
+
+            <p><strong class="text-navy font-medium">11. Cookies.</strong> Сайт использует cookies для улучшения работы и анализа посещаемости. Продолжая использование сайта, пользователь соглашается с использованием cookies. Отключить их можно в настройках браузера.</p>
+
+            <p><strong class="text-navy font-medium">12. Изменения политики.</strong> Оператор вправе вносить изменения в настоящую Политику. Новая редакция вступает в силу с момента её размещения на сайте.</p>
+
+            <p><strong class="text-navy font-medium">13. Контакты.</strong> По вопросам обработки персональных данных обращайтесь: hello@yapomogayu.rf.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offer -->
+    <div id="offer" class="legal-item border-b border-line">
+      <button class="legal-toggle w-full flex items-start justify-between gap-6 py-6 text-left">
+        <div>
+          <div class="text-xs uppercase tracking-widest text-muted-light mb-2">Правовая информация</div>
+          <h3 class="font-heading font-bold text-xl sm:text-2xl text-navy leading-snug">Публичная оферта</h3>
+        </div>
+        <span class="legal-plus text-gold text-3xl font-light leading-none mt-3 flex-shrink-0">+</span>
+      </button>
+      <div class="legal-panel">
+        <div>
+          <div class="pb-10 pr-2 sm:pr-12 text-sm sm:text-base text-muted leading-relaxed space-y-5">
+
+            <p>Настоящий документ является публичной офертой (далее — «Оферта») и содержит все существенные условия договора возмездного оказания юридических услуг. Полным и безоговорочным акцептом настоящей Оферты в соответствии со статьями 437 и 438 Гражданского кодекса Российской Федерации является направление Заказчиком заявки через формы на сайте и/или оплата услуг Исполнителя.</p>
+
+            <p><strong class="text-navy font-medium">1. Термины.</strong> «Исполнитель» — юридическая сеть «ЯПомогаю.рф». «Заказчик» — физическое или юридическое лицо, акцептовавшее настоящую Оферту. «Услуги» — юридические услуги в сфере наследственного права, оказываемые Исполнителем в соответствии с настоящей Офертой и согласованным составом работ.</p>
+
+            <p><strong class="text-navy font-medium">2. Предмет договора.</strong> Исполнитель обязуется оказать Заказчику юридические услуги по сопровождению наследственного дела (правовой анализ, открытие наследственного дела, сбор документов, представительство, регистрация прав), а Заказчик обязуется принять и оплатить услуги в порядке и на условиях, предусмотренных настоящей Офертой.</p>
+
+            <p><strong class="text-navy font-medium">3. Стоимость и порядок оплаты.</strong> Стоимость услуг согласовывается сторонами в индивидуальном порядке исходя из объёма работ и фиксируется в счёте или дополнительном соглашении. Оплата производится в порядке предоплаты (полной или частичной) на условиях, согласованных сторонами. Нотариальные тарифы, государственные пошлины и иные обязательные платежи в стоимость услуг Исполнителя не входят и оплачиваются Заказчиком самостоятельно.</p>
+
+            <p><strong class="text-navy font-medium">4. Права и обязанности Исполнителя.</strong> Исполнитель обязан оказать услуги качественно, в согласованные сроки, информировать Заказчика о ходе работы. Исполнитель вправе привлекать для оказания услуг третьих лиц, не разглашая конфиденциальной информации сверх необходимого. Исполнитель не гарантирует конкретного процессуального результата судебного разбирательства, поскольку решение принимается судом.</p>
+
+            <p><strong class="text-navy font-medium">5. Права и обязанности Заказчика.</strong> Заказчик обязан предоставить Исполнителю достоверную информацию и документы, необходимые для оказания услуг, своевременно оплачивать услуги, выдавать нотариальные доверенности по запросу Исполнителя. Заказчик вправе получать информацию о ходе исполнения договора.</p>
+
+            <p><strong class="text-navy font-medium">6. Ответственность сторон.</strong> Стороны несут ответственность в соответствии с действующим законодательством Российской Федерации. Исполнитель не несёт ответственности за результаты, наступившие вследствие предоставления Заказчиком недостоверной или неполной информации, либо несвоевременного предоставления документов.</p>
+
+            <p><strong class="text-navy font-medium">7. Конфиденциальность.</strong> Стороны обязуются соблюдать режим конфиденциальности в отношении сведений, ставших им известными при исполнении настоящего договора. Передача информации третьим лицам осуществляется только в случаях, предусмотренных законом или с согласия другой стороны.</p>
+
+            <p><strong class="text-navy font-medium">8. Форс-мажор.</strong> Стороны освобождаются от ответственности за неисполнение обязательств, если оно вызвано обстоятельствами непреодолимой силы, которые сторона не могла предвидеть или предотвратить разумными мерами.</p>
+
+            <p><strong class="text-navy font-medium">9. Срок действия и порядок расторжения.</strong> Оферта действует до момента её отзыва или изменения Исполнителем. Заказчик вправе расторгнуть договор в одностороннем порядке при условии оплаты фактически понесённых Исполнителем расходов (ст. 782 ГК РФ).</p>
+
+            <p><strong class="text-navy font-medium">10. Разрешение споров.</strong> Все споры подлежат разрешению путём переговоров. При недостижении соглашения спор передаётся на рассмотрение в суд по месту нахождения Исполнителя в соответствии с действующим законодательством.</p>
+
+            <p><strong class="text-navy font-medium">11. Реквизиты Исполнителя.</strong> Полное наименование, ИНН, ОГРН, банковские реквизиты Исполнителя предоставляются Заказчику при заключении договора и указываются в подтверждающих документах. Контактный адрес электронной почты: hello@yapomogayu.rf.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  // ============== Reveal on scroll ==============
+  (function() {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || els.length === 0) {
+      els.forEach(function(el) { el.classList.add('visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function(el) { io.observe(el); });
+  })();
+
+  // ============== FAQ accordion ==============
+  document.querySelectorAll('.faq-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.faq-item');
+      var wasOpen = item.classList.contains('open');
+      // close siblings (optional — single open mode)
+      document.querySelectorAll('.faq-item.open').forEach(function(other) {
+        if (other !== item) other.classList.remove('open');
+      });
+      if (wasOpen) {
+        item.classList.remove('open');
+      } else {
+        item.classList.add('open');
+      }
+    });
+  });
+
+  // ============== Legal accordion ==============
+  document.querySelectorAll('.legal-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      btn.closest('.legal-item').classList.toggle('open');
+    });
+  });
+
+  // ============== Lead form ==============
+  document.getElementById('leadForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // In production: send to backend / CRM
+    var success = document.getElementById('formSuccess');
+    success.classList.remove('hidden');
+    this.reset();
+    setTimeout(function() {
+      success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 50);
+  });
+</script>
+
+</body>
+</html>
